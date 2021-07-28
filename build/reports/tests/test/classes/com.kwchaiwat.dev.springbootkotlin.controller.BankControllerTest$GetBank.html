@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - GET /api/banks/{accountNumber}</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>GET /api/banks/{accountNumber}</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/com.kwchaiwat.dev.springbootkotlin.controller.html">com.kwchaiwat.dev.springbootkotlin.controller</a> &gt; BankControllerTest$GetBank</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">2</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.397s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">should return Not Found if the account number does not exist()</td>
+<td class="success">0.337s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">should return the bank with the given account number()</td>
+<td class="success">0.060s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>2021-07-28 17:32:58.561  INFO 84685 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.kwchaiwat.dev.springbootkotlin.controller.BankControllerTest$GetBank], using SpringBootContextLoader
+2021-07-28 17:32:58.564  INFO 84685 --- [    Test worker] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [com.kwchaiwat.dev.springbootkotlin.controller.BankControllerTest$GetBank]: no resource found for suffixes {-context.xml, Context.groovy}.
+2021-07-28 17:32:58.564  INFO 84685 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.kwchaiwat.dev.springbootkotlin.controller.BankControllerTest$GetBank]: GetBank does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2021-07-28 17:32:58.575  INFO 84685 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.kwchaiwat.dev.springbootkotlin.SpringboardsApplication for test class com.kwchaiwat.dev.springbootkotlin.controller.BankControllerTest$GetBank
+2021-07-28 17:32:58.582  INFO 84685 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2021-07-28 17:32:58.582  INFO 84685 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@2f0cdab9, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@7b0c0040, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@437eeb8e, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@18ef8435, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@51ff4c83, org.springframework.test.context.support.DirtiesContextTestExecutionListener@4aea58fc, org.springframework.test.context.transaction.TransactionalTestExecutionListener@7e7cf8b4, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@1ad61562, org.springframework.test.context.event.EventPublishingTestExecutionListener@3166d9ef, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@29d34a87, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@30f3be51, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@1a24c028, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@1d8adb22, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@2e3e3d66, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@3921fc6]
+Hibernate: select bank0_.id as id1_0_, bank0_.account_number as account_2_0_, bank0_.transaction_fee as transact3_0_, bank0_.trust as trust4_0_ from banks bank0_ where bank0_.account_number=?
+
+MockHttpServletRequest:
+      HTTP Method = GET
+      Request URI = /api/banks/does_not_exist
+       Parameters = {}
+          Headers = []
+             Body = null
+    Session Attrs = {}
+
+Handler:
+             Type = com.kwchaiwat.dev.springbootkotlin.controller.bank.BankController
+           Method = com.kwchaiwat.dev.springbootkotlin.controller.bank.BankController#getBank(String)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = java.util.NoSuchElementException
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 404
+    Error message = null
+          Headers = [Content-Type:&quot;text/plain;charset=UTF-8&quot;, Content-Length:&quot;56&quot;]
+     Content type = text/plain;charset=UTF-8
+             Body = Could not find a bank with account number does_not_exist
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+Hibernate: select bank0_.id as id1_0_, bank0_.account_number as account_2_0_, bank0_.transaction_fee as transact3_0_, bank0_.trust as trust4_0_ from banks bank0_ where bank0_.account_number=?
+
+MockHttpServletRequest:
+      HTTP Method = GET
+      Request URI = /api/banks/AB-56563
+       Parameters = {}
+          Headers = []
+             Body = null
+    Session Attrs = {}
+
+Handler:
+             Type = com.kwchaiwat.dev.springbootkotlin.controller.bank.BankController
+           Method = com.kwchaiwat.dev.springbootkotlin.controller.bank.BankController#getBank(String)
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = [Content-Type:&quot;application/json&quot;]
+     Content type = application/json
+             Body = {&quot;id&quot;:12,&quot;accountNumber&quot;:&quot;AB-56563&quot;,&quot;trust&quot;:312.22,&quot;transactionFee&quot;:40}
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 7.1.1</a> at Jul 28, 2021, 5:33:09 PM</p>
+</div>
+</div>
+</body>
+</html>
