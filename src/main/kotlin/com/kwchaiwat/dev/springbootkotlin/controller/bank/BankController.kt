@@ -8,10 +8,17 @@ import org.springframework.http.HttpStatus
 import org.springframework.web.bind.annotation.*
 
 @RestController
+//@org.springframework.stereotype.Controller
 @RequestMapping("api/banks")
 class BankController(
-    @Autowired private val bankRepository: BankRepository
+    @Autowired private val bankRepository: BankRepository,
 ) : Controller {
+
+//    @GetMapping
+//    fun viewBooks(model: Model): String {
+//        model.addAttribute("banks", bankRepository.findAll())
+//        return "bank"
+//    }
 
     @GetMapping
     fun getBanks(): Collection<Bank> = bankRepository.findAll()

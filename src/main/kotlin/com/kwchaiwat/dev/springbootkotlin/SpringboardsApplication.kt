@@ -1,6 +1,7 @@
 package com.kwchaiwat.dev.springbootkotlin
 
 import org.springframework.boot.CommandLineRunner
+import org.springframework.boot.autoconfigure.EnableAutoConfiguration
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
 import org.springframework.boot.web.client.RestTemplateBuilder
